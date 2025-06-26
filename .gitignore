@@ -1,0 +1,53 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+
+# Production builds
+/build
+/dist
+
+# Local env files
+.env
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sw?
+
+# React specific
+quiznest/build/
+quiznest/.env
+
+# MongoDB data (if running locally)
+data/db
+*.local
+
+# Optional: coverage reports from testing
+coverage/
+
+# Parcel, Vite, Webpack cache
+.cache/
+quiznest/.cache/
+quiznest/.parcel-cache/
+
+# Mac QuickLook thumbnails
+._*
+
+# System files
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+*.tgz
