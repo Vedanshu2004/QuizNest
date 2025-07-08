@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-bg {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background: #23272f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  color: #fff;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.register-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #ffb347;
+}
+
+.register-form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #ffb347;
+}
+
+.register-input {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(233, 226, 226, 0.1);
+  color: #fff;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style the select dropdown for role */
+.register-input[type="select"],
+.register-input select {
+  background: #23272f;
+  color: #ffb347;
+}
+
+.register-input option {
+  background: #23272f;
+  color: #ffb347;
+}
+
+.register-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #cf5252, #ff0066);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 0, 100, 0.4);
+}
+
+.register-link-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffb347;
+}
+
+.register-link {
+  color: #ff0066;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #ff4d4d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
